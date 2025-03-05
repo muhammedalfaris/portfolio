@@ -5,7 +5,7 @@ const Experience = () => {
   return (
     <div id="experience" className="experience">
       <h2>My Experience</h2>
-      <p>Details about my experience.....</p>
+      <p>my experience...</p>
     </div>
   );
 };
