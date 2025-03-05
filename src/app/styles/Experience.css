@@ -1,0 +1,12 @@
+.experience {
+    height: 100vh;
+    min-height: auto;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }  
+
+  
