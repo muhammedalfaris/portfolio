@@ -1,12 +1,112 @@
 .experience {
-    height: 100vh;
-    min-height: auto;
-    background: transparent;
-    color: rgb(255, 255, 255);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }  
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 20px;
+  gap: 15px;
+}
 
-  
+.experience-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.experience-list {
+  width: 100%;
+  max-width: 800px;
+}
+
+.experience-card {
+  background: #4a0072;
+  color: white;
+  padding: 15px 20px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.experience-card:hover {
+  background: #6a00a8;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* font-weight: bold; */
+  font-size: medium;
+}
+
+.expand-icon {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.experience-details {
+  margin-top: 10px;
+  padding: 15px;
+  background:rgb(4, 4, 42);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.experience-info {
+  max-width: 65%;
+}
+
+.experience-info p {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.experience-info .icon {
+  margin-right: 8px;
+}
+
+.skills {
+  margin-top: 10px;
+}
+
+.skill {
+  display: inline-block;
+  background: #6a00a8;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  margin: 5px;
+}
+
+.company-logo {
+  max-width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.company-logo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .experience-details {
+    flex-direction: column;
+  }
+
+  .experience-info {
+    max-width: 100%;
+  }
+
+  .company-logo {
+    max-width: 100%;
+    margin-top: 10px;
+  }
+}
