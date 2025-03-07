@@ -5,8 +5,13 @@ import "@/app/styles/Navbar.css";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false); // Close the menu
   };
 
   return (
@@ -22,10 +27,10 @@ const Navbar = () => {
 
       {/* Navigation Links */}
       <ul className={`nav-links ${menuOpen ? "show" : ""}`}>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home" onClick={closeMenu}>Home</a></li>
+        <li><a href="#experience" onClick={closeMenu}>Experience</a></li>
+        <li><a href="#projects" onClick={closeMenu}>Projects</a></li>
+        <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
       </ul>
     </nav>
   );

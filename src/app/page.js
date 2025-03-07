@@ -3,6 +3,7 @@ import { useState, useEffect, useCallback, useRef } from "react";
 import Navbar from "./components/Navbar";
 import Experience from "./components/Experience";
 import Hero2 from "./components/Hero2";
+import Projects from "./components/Projects";
 
 export default function Home() {
   const [gradient, setGradient] = useState("rgb(4, 4, 42)");
@@ -32,6 +33,7 @@ export default function Home() {
       <Navbar />
       <Hero2 />
       <Experience />
+      <Projects/>
     </div>
   );
 }

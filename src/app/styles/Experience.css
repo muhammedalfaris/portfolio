@@ -98,6 +98,7 @@
 @media (max-width: 768px) {
   .experience-details {
     flex-direction: column;
+    font-size: small;
   }
 
   .experience-info {
@@ -107,5 +108,13 @@
   .company-logo {
     max-width: 100%;
     margin-top: 10px;
+  }
+  .role, .date, .skill{
+    font-size: small;
+  }
+}
+@media (max-width: 480px){
+  .experience-title {
+    font-size: x-large;
   }
 }
