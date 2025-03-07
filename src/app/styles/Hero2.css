@@ -26,6 +26,7 @@
 }
 .skills-container {
     margin-top: 80px;
+    overflow: hidden;
   }
   
   .skills-scroller {
@@ -33,6 +34,7 @@
     gap: 60px; 
     white-space: nowrap;
     max-width: 100%;
+    width: max-content;
   }
   
   .skill-icon {
@@ -51,6 +53,9 @@
         padding: 100px 35px 0px 35px;
         font-size: large;
     }
+    .skills-scroller {
+        gap: 30px; 
+      }
 }
 @media (max-width: 480px) {
     .hero-child {
@@ -63,4 +68,7 @@
     .skills-container {
         margin-top: 40px;
       }
+    .skills-scroller {
+        gap: 20px; 
+    }
 }

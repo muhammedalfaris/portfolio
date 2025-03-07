@@ -74,10 +74,10 @@ const Hero2 = () => {
           <h3 style={{textAlign:"center"}}>Technologies Driving my Creations</h3>
           <motion.div 
             className="skills-scroller"
-            animate={{ x: ["0%", "-50%"] }} 
-            transition={{ repeat: Infinity, duration: 12, ease: "linear" }}
+            animate={{ x: ["0%", "-200%"] }} 
+            transition={{ repeat: Infinity, duration: 30, ease: "linear" }}
           >
-            {[...skills, ...skills].map((skill, index) => (
+            {[...skills, ...skills, ...skills, ...skills].map((skill, index) => (
               <img key={index} src={skill.src} alt={skill.alt} className="skill-icon" />
             ))}
           </motion.div>
