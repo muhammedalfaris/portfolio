@@ -69,6 +69,7 @@ const Experience = () => {
             )}
           </div>
         ))}
+        <button className="res">Resumé</button>
       </div>
     </div>
   );
