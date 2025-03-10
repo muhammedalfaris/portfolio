@@ -12,9 +12,9 @@ const skills = [
   { src: "https://imgs.search.brave.com/DP8DXrD4DETBX8pWzMma8_ME-eCkFJ65jcHaOiP2gQQ/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMuc3RpY2twbmcu/Y29tL3RodW1icy82/MmE3NjQ5MmJkNzNh/NGFmNWM1ZDRmYjku/cG5n", alt: "Bootstrap" },
   { src: "https://imgs.search.brave.com/j6wDiqSrRFDP94uhwRKdlhWIBQIlAFSR2Gs8DgWOs_s/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG40/Lmljb25maW5kZXIu/Y29tL2RhdGEvaWNv/bnMvbG9nb3MtYW5k/LWJyYW5kcy81MTIv/MTgxX0phdmFfbG9n/b19sb2dvcy01MTIu/cG5n", alt: "Java" },
   { src: "https://imgs.search.brave.com/YG4JAUJFDLXH24Jw5diRgzDySHcPX7JnwTWKOGrC0Tw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9wbmdp/bWcuY29tL3VwbG9h/ZHMvbGV0dGVyX2Mv/c21hbGwvbGV0dGVy/X2NfUE5HMjIucG5n", alt: "C" },
-  { src: "https://imgs.search.brave.com/vJx8kamIX3xx3_fB4P07lwfjoDVmU6-Um-ckOaZbrLU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9sb2dv/ZG93bmxvYWQub3Jn/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIy/LzEyL2ZpZ21hLWxv/Z28tMC5wbmc", alt: "Figma" }
+  { src: "https://imgs.search.brave.com/vJx8kamIX3xx3_fB4P07lwfjoDVmU6-Um-ckOaZbrLU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9sb2dv/ZG93bmxvYWQub3Jn/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIy/LzEyL2ZpZ21hLWxv/Z28tMC5wbmc", alt: "Figma" },
+  { src: "https://imgs.search.brave.com/sWxb_rFYxoCpSSF5qnFp5j8uF8Uzso95taBu1ZTveqI/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMtMDAuaWNvbmR1/Y2suY29tL2Fzc2V0/cy4wMC9naXQtaWNv/bi01MTJ4NTEyLTYx/emZtdnhrLnBuZw", alt: "Git" }
 ];
-
 const Hero2 = () => {
   return (
     <div id="home" className="hero-parent">
@@ -74,10 +74,10 @@ const Hero2 = () => {
           <h3 style={{textAlign:"center"}}>Technologies Driving my Creations</h3>
           <motion.div 
             className="skills-scroller"
-            animate={{ x: ["0%", "-200%"] }} 
-            transition={{ repeat: Infinity, duration: 30, ease: "linear" }}
+            animate={{ x: ["0%", "-300%"] }} 
+            transition={{ repeat: Infinity, duration: 50, ease: "linear" }}
           >
-            {[...skills, ...skills, ...skills, ...skills].map((skill, index) => (
+            {[...skills, ...skills, ...skills, ...skills, ...skills].map((skill, index) => (
               <img key={index} src={skill.src} alt={skill.alt} className="skill-icon" />
             ))}
           </motion.div>
