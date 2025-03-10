@@ -53,7 +53,7 @@ const Hero2 = () => {
         >
           <Typewriter
             words={[
-              "I'm a Computer Science Engineer passionate about front-end development, currently working as a Web Developer at Kitez, Thrissur, Kerala. I focus on building responsive and user-friendly web applications, integrating APIs, and optimizing performance. Always eager to learn, I continuously explore new technologies to enhance my skills and create innovative web solutions."
+              "I'm a Computer Science Engineer passionate about front-end development, currently working as Junior Web Developer at Kitez, Thrissur, Kerala. I focus on building responsive and user-friendly web applications, integrating APIs, and optimizing performance. Always eager to learn, I continuously explore new technologies to enhance my skills and create innovative web solutions."
             ]}
             loop={1}
             cursor
