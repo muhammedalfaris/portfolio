@@ -174,7 +174,7 @@
     }
     
   }
-  @media (max-width: 360px) {
+  @media (max-width: 365px) {
     .overlay {
       font-size: x-small; /* Adjust overlay font size for smaller screens */
     }
