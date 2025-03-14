@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import "@/app/styles/Experience.css";
 import { FaMapMarkerAlt } from "react-icons/fa";
@@ -14,7 +14,7 @@ const experiences = [
     description:
       "Working on multiple live projects, implementing designs, tackling various issues, conducting basic testing, and collaborating effectively in a team environment.",
     logo: "/Kitez.jpg", 
-    skills: ["React.js", "NextJS", "Git", "Figma", "JS", "CSS" ],
+    skills: ["React", "Next.jS", "Git", "Figma", "JS", "CSS" ],
   },
   {
     role: "Java Full Stack Development Intern @ Kompetenzen Technologies",
@@ -24,12 +24,16 @@ const experiences = [
     description:
       "Gained hands-on experience in full-stack web development, UI/UX design, and React by building responsive applications, troubleshooting front-end issues, and upskilling in back-end technologies.",
     logo: "/komp.jpg",
-    skills: ["React,js", "Bootstrap", "HTML", "CSS", "JavaScript", "Java"],
+    skills: ["React", "Bootstrap", "HTML", "CSS", "JavaScript", "Java"],
   },
 ];
 
 const Experience = () => {
   const [expandedIndex, setExpandedIndex] = useState(null);
+
+  useEffect(() => {
+    setExpandedIndex(0); 
+  }, []);
 
   const toggleExpand = (index) => {
     setExpandedIndex(expandedIndex === index ? null : index);

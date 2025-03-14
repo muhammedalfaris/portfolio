@@ -95,7 +95,7 @@
     opacity: 1;
   }
 
-  @media (max-width: 1130px) {
+  @media (max-width: 1153px) {
     .overlay {
       font-size: 14px; /* Adjust overlay font size for medium screens */
     }
@@ -103,6 +103,12 @@
     .project-summary {
       font-size: 14px; /* Adjust summary font size for medium screens */
     }
+  }
+  @media (max-width: 1083px) {
+    .project-summary{
+      font-size: 12px;
+    }
+    
   }
   
   /* Responsive Styles */
@@ -119,10 +125,16 @@
       font-size: medium; /* Adjust summary font size for medium screens */
     }
   }
+  @media (max-width: 837px) {
+    .project-summary {
+      font-size: 13px; 
+    }
+  }
   
   @media (max-width: 768px) {
     .projects-container {
-      grid-template-columns: 1fr; /* 1 card in a row for smaller screens */
+      grid-template-columns: 1fr;
+      padding: 0px 50px;
     }
   
     .overlay {
@@ -130,7 +142,7 @@
     }
   
     .project-summary {
-      font-size: small; /* Adjust summary font size for smaller screens */
+      font-size: medium; /* Adjust summary font size for smaller screens */
     }
     .h2 {
       font-size: x-large
@@ -139,13 +151,36 @@
       font-size: large
     }
   }
-  @media (max-width: 330px) {
+  @media (max-width: 433px) {
     .overlay {
       font-size: x-small; /* Adjust overlay font size for smaller screens */
     }
   
-    .project-summary {
-      font-size: x-small; /* Adjust summary font size for smaller screens */
+    .projects-container{
+      padding: 0px 30px;
+    }
+    
+  }
+  @media (max-width: 392px) {
+    .overlay {
+      font-size: x-small; /* Adjust overlay font size for smaller screens */
+    }
+  
+    .projects-container{
+      padding: 0px 30px;
+    }
+    .project-summary{
+      font-size: 13px;
+    }
+    
+  }
+  @media (max-width: 345px) {
+    .overlay {
+      font-size: x-small; /* Adjust overlay font size for smaller screens */
+    }
+  
+    .project-summary{
+      font-size: xx-small;
     }
     
   }
