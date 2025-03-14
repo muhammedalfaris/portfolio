@@ -12,19 +12,19 @@
   
   .social-icon {
     font-size: 24px;
-    color: #b0b0b0;
+    color: rgba(127, 255, 212, 0.738);
     transition: color 0.3s ease, transform 0.2s ease;
   }
   
   .social-icon:hover {
-    color: #ffffff;
+    color: aquamarine;
     transform: scale(1.2);
   }
   
   .vertical-line {
     width: 1px;
     height: 120px; /* Adjust the height */
-    background-color: #b0b0b0;
+    background-color: rgba(127, 255, 212, 0.738);
     margin-top: 10px;
   }
   @media (max-width: 975px) {

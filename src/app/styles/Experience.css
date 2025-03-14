@@ -97,9 +97,13 @@
 .res{
   padding: 10px;
   background-color: transparent;
-  border: 1px solid violet;
-  color: white;
+  border: 1px solid  rgba(127, 255, 212, 0.738);
+  color:  rgba(127, 255, 212, 0.738);
   border-radius: 15px;
+}
+.res:hover{
+  background-color: aquamarine;
+  color: #0a192f;
 }
 
 @media (max-width: 768px) {
@@ -123,5 +127,9 @@
 @media (max-width: 480px){
   .experience-title {
     font-size: x-large;
+  }
+  .res{
+    border: 1px solid  aquamarine;
+    color:  aquamarine;
   }
 }
