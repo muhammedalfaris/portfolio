@@ -48,6 +48,9 @@
 
 /* Responsive */
 @media (max-width: 780px) {
+    .hero-parent {
+        min-height: 100vh;
+    }
     .hero-child {
         padding: 100px 35px 0px 35px;
         font-size: large;
